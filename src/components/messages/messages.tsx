@@ -1,6 +1,6 @@
 const messagesContent = [
   {
-    avatar__src: 'assets/avatars/woman1.jpg',
+    avatar__src: 'src/assets/avatars/woman1.jpg',
     name: 'Alena Nováková',
     handle: '@novalena',
     time: '2h',
@@ -9,7 +9,7 @@ const messagesContent = [
     bookmarkSave: false,
   },
   {
-    avatar__src: 'assets/avatars/woman2.jpg',
+    avatar__src: 'src/assets/avatars/woman2.jpg',
     name: 'Jana Novotná',
     handle: '@janicka',
     time: '1d',
@@ -18,7 +18,7 @@ const messagesContent = [
     bookmarkSave: true,
   },
   {
-    avatar__src: 'assets/avatars/woman3.jpg',
+    avatar__src: 'src/assets/avatars/woman3.jpg',
     name: 'Lenka Skočdopole',
     handle: '@fieldhop',
     time: '1d',
@@ -34,7 +34,7 @@ export const Messages = () => {
       {messagesContent.map((messContent) => (
         <article className="message">
           <div className="message__avatar">
-            <img src="assets/avatars/woman1.jpg" alt="" />
+            <img src={messContent.avatar__src} alt="" />
           </div>
           <div className="message__content">
             <header className="message__header">
@@ -46,7 +46,7 @@ export const Messages = () => {
             <footer className="message__footer">
               <button className="icon-button icon-button--red">
                 <span className="icon-button__icon">
-                  <img src="assets/icons/heart.svg" alt="Miluju to" />
+                  <img src="src/assets/icons/heart.svg" alt="Miluju to" />
                 </span>
                 {messContent.likes}
               </button>
@@ -55,8 +55,8 @@ export const Messages = () => {
                   <img
                     src={
                       messContent.bookmarkSave
-                        ? 'assets/icons/bookmark-active.svg'
-                        : 'assets/icons/bookmark.svg'
+                        ? 'src/assets/icons/bookmark-active.svg'
+                        : 'src/assets/icons/bookmark.svg'
                     }
                     alt="Uložit do záložek"
                   />
@@ -65,7 +65,7 @@ export const Messages = () => {
               </button>
               <button className="icon-button icon-button--red">
                 <span className="icon-button__icon">
-                  <img src="assets/icons/trash.svg" alt="Smazat zprávu" />
+                  <img src="src/assets/icons/trash.svg" alt="Smazat zprávu" />
                 </span>
                 Smazat zprávu
               </button>

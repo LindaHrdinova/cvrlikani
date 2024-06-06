@@ -6,14 +6,14 @@ export const SideBar: React.FC = () => {
       <nav className="menu">
         <div className="menu__item menu__logo">
           <a href="#" className="menu__link">
-            <img className="menu__icon" src="assets/icons/kiwi.svg" />
+            <img className="menu__icon" src="src/assets/icons/kiwi.svg" />
           </a>
         </div>
         <div className="menu__item">
           <a href="#" className="menu__link">
             <img
               className="menu__icon"
-              src="assets/icons/house.svg"
+              src="src/assets/icons/house.svg"
               alt="Domů"
             />
             <span className="menu__text">Domů</span>
@@ -23,7 +23,7 @@ export const SideBar: React.FC = () => {
           <a href="#" className="menu__link">
             <img
               className="menu__icon"
-              src="assets/icons/bookmark.svg"
+              src="src/assets/icons/bookmark.svg"
               alt="Záložky"
             />
             <span className="menu__text">Záložky</span>
@@ -33,7 +33,7 @@ export const SideBar: React.FC = () => {
           <a href="#" className="menu__link">
             <img
               className="menu__icon"
-              src="assets/icons/heart.svg"
+              src="src/assets/icons/heart.svg"
               alt="Lajky"
             />
             <span className="menu__text">Lajky</span>
